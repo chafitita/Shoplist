@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #E5D0AC;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.shop-card{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 5vw;
+	box-shadow: 12px 12px 12px #C2B280,
+	-10px -10px 10px #f9dfc5;
+}
