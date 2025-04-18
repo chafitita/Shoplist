@@ -18,7 +18,7 @@ export function App(){
         <>
         <div className="container">
             <div className="shop-card">
-                <h1>Lista de compras</h1>
+                <h1 className='foro-titulo'>Lista de compras</h1>
                 <div className="item-count">
                     <h3>N° de compras: {itemCount}</h3>
                 </div>
