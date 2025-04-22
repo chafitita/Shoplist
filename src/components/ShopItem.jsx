@@ -33,7 +33,7 @@ export const ShopItem = (
             <button
                 className="btn-delete"
                 onClick={() => handleDeleteItem(item.id)}>
-                <a><img src="src\img\recycle bin.png" alt="delete"/></a>
+                <a><img src="src/img/recycle bin.png" alt="delete"/></a>
             </button>
         </li>
     );

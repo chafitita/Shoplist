@@ -41,7 +41,7 @@ export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
                      <a><img src="src/img/ok btn.jpg" alt="ok" /></a>
                 </button>
                 <button type="button" onClick={handleCancelEdit} className='btn-cancel'>
-                    <a><img src="src\img\cancel btn.jpg" alt="cancel" /></a>
+                    <a><img src="src/img/cancel btn.jpg" alt="cancel" /></a>
                 </button>
             </div>
         </form>
