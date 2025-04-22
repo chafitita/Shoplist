@@ -3,11 +3,14 @@
 	padding: 0;
 }
 body {
-	font-family: Verdana, Arial, sans-serif;
+	font-family: "EB Garamond", serif;
 	background-color: #F0F0F0;
 	color: #333;
 	margin: 20px;
 	padding: 0;
+	background-image:url(/src/img/background.webp);
+	background-size:cover
+	
   }
 .container{
 	display: flex;
@@ -20,30 +23,30 @@ body {
 	
 }
 .foro-titulo {
-	background-color: #006699;
+	background-color: #0200a1;
 	color: #FFFFFF;
 	padding: 10px;
 	margin-bottom: 15px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
 	font-size: 1.2em;
 	font-weight: bold;
-	border-bottom: 2px solid #003366; 
   }
 .shop-card{
 	display: flex;
 	flex-direction: column;
-	border-radius: 10px;
 	padding: 5vw;
-	background-color: #E6E6E6; 
-	border: 1px solid #CCC;
+	background-color: #c0c0c0; 
+	border: 3px solid #909090;
 	padding: 10px;
 	margin-bottom: 10px;
-	box-shadow: 3px 3px 5px #888888;
 }
 h1 {
 	text-align: center;
 }
 h3{
-	background-color: #ADD8E6;
+	background-color: #a5a2a2;
 	color: #333;
 	padding: 8px;
 	margin-bottom: 8px;
@@ -72,16 +75,15 @@ ul {
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
 }
 
 ul li {
 	list-style: none;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	align-items: center;
 	gap: 5px;
-	border: 2px #888888 solid;
+	border: 2.5px #909090 solid;
 }
 
 ul li span {
@@ -115,11 +117,11 @@ ul li form {
 }
 
 .container-done.active {
-	background-color: rgb(160, 212, 160);
+	background-color: rgb(36, 222, 36);
 }
 
 .text-decoration-dashed {
-	text-decoration: line-through;
+	text-decoration: line-through black;
 }
 
 form {
@@ -138,10 +140,27 @@ form {
 	outline: none;
 	padding: 10px 20px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
-	border-radius: 20px;
 	flex: 1;
 	font-family: inherit;
 	font-size: 17px;
 	color: #555;
 }
+img{
+	height: 5vh;
+	width: 15vw;
+}
+.btn-delete img{
+	height: 64px;
+	width: 64px;
+}
 
+.pencil-btn img{
+	height: 64px;
+	width: 64px;
+}
+.btn-edit , .btn-cancel, .pencil-btn, .btn-delete, .btn-add{
+	padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

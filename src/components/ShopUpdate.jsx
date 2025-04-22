@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { IoCreateOutline } from "react-icons/io5";
 import { useForm } from '../hooks/useForm';
 
 export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
@@ -39,10 +38,10 @@ export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
             />
             <div>
                 <button type="submit" className="btn-edit">
-                    <IoCreateOutline /> Guardar
+                     <a><img src="src/img/ok btn.jpg" alt="ok" /></a>
                 </button>
                 <button type="button" onClick={handleCancelEdit} className='btn-cancel'>
-                    Cancelar
+                    <a><img src="src\img\cancel btn.jpg" alt="cancel" /></a>
                 </button>
             </div>
         </form>

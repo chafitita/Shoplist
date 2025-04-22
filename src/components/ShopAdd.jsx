@@ -42,7 +42,7 @@ export const ShopAdd = ({handleNewItem}) => {
         placeholder="Cantidad"
         />
         <button className="btn-add" type='submit'>
-            Agregar
+            <a><img src="src\img\agregar btn.jpg" alt="agregar" /></a>
         </button>
     </form>
   )

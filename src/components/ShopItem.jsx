@@ -26,14 +26,14 @@ export const ShopItem = (
                 </span>
             )}
 
-            <button onClick={() => setIsEditing(true)}>
-                <IoMdCreate />
+            <button onClick={() => setIsEditing(true)} className='pencil-btn'>
+                <a><img src="src/img/edit.png" alt="edit" /></a>
             </button>
 
             <button
                 className="btn-delete"
                 onClick={() => handleDeleteItem(item.id)}>
-                <IoTrashBinOutline />
+                <a><img src="src\img\recycle bin.png" alt="delete"/></a>
             </button>
         </li>
     );
