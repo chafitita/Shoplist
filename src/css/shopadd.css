@@ -1,0 +1,8 @@
+.error-cantidad, .warning-nulidad, .warning-menor, .error-text{
+    background-color: #c0c0c0;
+    border-radius: 0%;
+    color: black;
+    border: 2.5px #909090 solid;
+    /*background-image: url(../assets/alert.jpg);
+    background-size:100%;*/
+}
