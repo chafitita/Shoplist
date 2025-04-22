@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { IoTrashBinOutline } from 'react-icons/io5';
 import { ShopUpdate } from './ShopUpdate';
-import { IoMdCreate } from "react-icons/io";
+import pencilIcon from '../assets/edit.png'
+import recycleIcon from '../assets/recycle-bin.png'
 
 export const ShopItem = (
     {
@@ -27,13 +27,13 @@ export const ShopItem = (
             )}
 
             <button onClick={() => setIsEditing(true)} className='pencil-btn'>
-                <a><img src="src/img/edit.png" alt="edit" /></a>
+                <img src={pencilIcon} alt="edit" />
             </button>
 
             <button
                 className="btn-delete"
                 onClick={() => handleDeleteItem(item.id)}>
-                <a><img src="src/img/recycle-bin.png" alt="delete"/></a>
+                <img src={recycleIcon} alt="delete"/>
             </button>
         </li>
     );

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from '../hooks/useForm'
+import agregarIcon from '../assets/agregar-btn.jpg'
 
 export const ShopAdd = ({handleNewItem}) => {
 
@@ -42,7 +43,7 @@ export const ShopAdd = ({handleNewItem}) => {
         placeholder="Cantidad"
         />
         <button className="btn-add" type='submit'>
-            <a><img src="src/img/agregar-btn.jpg" alt="agregar" /></a>
+            <img src={agregarIcon} alt="agregar" />
         </button>
     </form>
   )

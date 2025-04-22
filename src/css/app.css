@@ -8,7 +8,7 @@ body {
 	color: #333;
 	margin: 20px;
 	padding: 0;
-	background-image:url(/src/img/background.webp);
+	background-image:url(../assets/background.webp);
 	background-size:cover
 	
   }

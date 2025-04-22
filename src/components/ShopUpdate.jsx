@@ -1,5 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useForm } from '../hooks/useForm';
+import okIcon from '../assets/ok-btn.jpg'
+import cancelIcon from '../assets/cancel-btn.jpg'
 
 export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
     const { updateDescription, onInputChange } = useForm({
@@ -38,10 +40,10 @@ export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
             />
             <div>
                 <button type="submit" className="btn-edit">
-                     <a><img src="src/img/ok-btn.jpg" alt="ok" /></a>
+                     <img src={okIcon} alt="ok" />
                 </button>
                 <button type="button" onClick={handleCancelEdit} className='btn-cancel'>
-                    <a><img src="src/img/cancel-btn.jpg" alt="cancel" /></a>
+                    <img src={cancelIcon} alt="cancel" />
                 </button>
             </div>
         </form>
