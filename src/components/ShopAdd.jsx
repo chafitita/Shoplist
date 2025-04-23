@@ -38,7 +38,7 @@ export const ShopAdd = ({handleNewItem}) => {
       return;
     }
 
-    if(quantity >= 1000) {
+    if(quantity > 1000) {
       toast.warning("La cantidad excede el límite de 1000.", {
         className: 'error-cantidad',
         hideProgressBar: true,

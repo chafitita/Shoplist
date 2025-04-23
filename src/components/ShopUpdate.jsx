@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { IoCreateOutline } from "react-icons/io5";
+import cancelIcon from '../assets/cancel-btn.jpg'
+import okIcon from '../assets/ok-btn.jpg'
 import { useForm } from '../hooks/useForm';
 import { toast } from 'react-toastify'; 
 
@@ -13,7 +14,7 @@ export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
 
     useEffect(() => {
         focusInputRef.current.focus();
-        setDisabled(updateDescription.trim().length === 0); // Deshabilita al inicio si está vacía
+        setDisabled(updateDescription.trim().length === 0);
     }, []);
 
     useEffect(() => {
@@ -52,10 +53,10 @@ export const ShopUpdate = ({ item, handleUpdateItem, onEditComplete }) => {
             />
             <div>
                 <button type="submit" className="btn-edit" disabled={disabled}>
-                    <IoCreateOutline /> Guardar
+                    <img src={okIcon} alt="ok" />
                 </button>
-                <button type="button" onClick={handleCancelEdit}>
-                    Cancelar
+                <button type="button" onClick={handleCancelEdit} className='btn-cancel'>
+                    <img src={cancelIcon} alt="cancelar" />
                 </button>
             </div>
         </form>
