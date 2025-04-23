@@ -1,1 +1,1 @@
-APP: https://shoplist-2000s.netlify.app/
+APP: https://shoplist-98.netlify.app
